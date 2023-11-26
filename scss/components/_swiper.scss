@@ -1,0 +1,120 @@
+.swiper {
+  width: 85%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: var(--primary-main-color-lighter);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 25% 0 25%;
+  position: relative;
+}
+
+.swiper-slide::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, rgba(1, 28, 68, 0.00) 48.53%, rgba(1, 28, 68, 0.73) 84.61%, #011C44 101.39%);
+  border-radius: 0 25% 0 25%;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slide-img {
+  border-radius: 0 25% 0 25%;
+  position: relative;
+}
+
+.slide-text {
+  position: absolute;
+  z-index: 999;
+  left: 115px;
+  bottom: 32px;
+  color: var(--primary-main-color-lighter);
+  text-align: center;
+  font-family: var(--main-font);
+  font-weight: var(--main-font-weight);
+  font-size: 22px;
+  line-height: 1.2;
+
+  @media screen and (max-width: 768px) {
+    left: auto;
+    font-size: 20px;
+    line-height: 1.15;
+  }
+}
+
+.slider-buttons-wrapper {
+  position: absolute;
+    width: 84%;
+    z-index: 10;
+    top: 55%;
+    left: 8%;
+
+    @media screen and (max-width: 1024px) {
+      width: 90%;
+      left: 5%;
+    }
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  display: none;
+}
+
+.swiper-button-prev, 
+.swiper-button-next {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--primary-main-color-dark);
+  border-radius: 100%;
+  fill: var(--primary-main-color-dark);
+  transition: background-color 0.2s linear, border-color 0.2s linear, fill 0.2s linear;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  fill: var(--primary-main-color-lighter);
+  background-color: var(--primary-main-color-light);
+  border-color: var(--primary-main-color-light);
+  transition: background-color 0.2s linear, border-color 0.2s linear, fill 0.2s linear;
+}
+
+.swiper-button-prev
+.swiper-button-next {
+  text-align: center;
+}
+
+.swiper-pagination {
+  padding-top: 28px;
+  position: static;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet-active {
+  background-color: var(--primary-main-color-light);
+}
+
+.swiper-pagination-bullet:not(:nth-last-of-type(1)) {
+  margin-right: 22px;
+}
