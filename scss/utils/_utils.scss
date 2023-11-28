@@ -4,11 +4,17 @@
   max-width: 1440px;
   padding: 0 100px;
 
-  @media (max-width: 1024px) {
+  @media screen and (max-width: 1024px) {
     padding-left: 50px;
     padding-right: 50px;
   }
+
+  @media screen and (max-width: 768px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
+
 .flex-container {
   display: flex;
 }
@@ -24,4 +30,19 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+/* hidden scrollbar Chrome, Safari и Opera */
+.popup-form::-webkit-scrollbar {
+  display: none;
+}
+
+.menu-list {
+  font-family: var(--main-font);
+  font-weight: var(--main-font-weight);
+  line-height: normal;
+
+  &__item-link {
+    padding: 0 10px;
+  }
 }

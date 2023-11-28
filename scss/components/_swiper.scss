@@ -1,3 +1,7 @@
+.our-procedures-section .custom-container {
+  position: relative;
+}
+
 .swiper {
   width: 85%;
   height: 100%;
@@ -45,7 +49,6 @@
 .slide-text {
   position: absolute;
   z-index: 999;
-  left: 115px;
   bottom: 32px;
   color: var(--primary-main-color-lighter);
   text-align: center;
@@ -55,7 +58,6 @@
   line-height: 1.2;
 
   @media screen and (max-width: 768px) {
-    left: auto;
     font-size: 20px;
     line-height: 1.15;
   }

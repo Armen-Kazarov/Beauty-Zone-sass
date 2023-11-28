@@ -9,3 +9,29 @@
   line-height: normal;
   transition: all 0.2s linear;
 }
+
+.request-call-btn {
+  border: 2px solid var(--primary-main-color-light);
+}
+
+.request-call-btn:hover {
+  background-color: transparent;
+  color: var(--primary-main-color-dark);
+}
+
+@media screen and (max-width: 480px) {
+  .btn {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .request-call-btn {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .btn {
+    font-size: 16px;
+  }
+}

@@ -3,7 +3,7 @@
 function burgerMenu() {
   const iconMenu = document.querySelector('.menu__icon');
   const menuBody = document.querySelector('.menu__body');
-  const menuItems = document.querySelectorAll('.header-nav-menu-list-item');
+  const menuItems = document.querySelectorAll('.header-nav-menu__list-item');
  
   console.log(menuItems)
   

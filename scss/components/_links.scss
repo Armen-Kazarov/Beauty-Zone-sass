@@ -1,0 +1,8 @@
+.contacts-icon--hover {
+  transition: fill 0.2s linear;
+}
+
+.contacts-list__item:hover
+.contacts-icon--hover {
+  fill: var(--primary-main-color-light);
+}
